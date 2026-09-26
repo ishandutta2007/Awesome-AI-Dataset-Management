@@ -1,5 +1,7 @@
 # Awesome AI Dataset Management 🚀
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a> <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
 ![Awesome AI Dataset Management Banner](./assets/banner.svg)
 
 ## 🌟 Top AI Dataset Management & Data-Centric AI Ecosystem
@@ -20,8 +22,10 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 - [💼 SaaS/Hosted Platforms](#-saashosted-platforms)
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Composable Open-Source Stacks](#%EF%B8%8F-composable-open-source-stacks)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
 
 ---
 
@@ -86,6 +90,17 @@ Modern data-centric AI workflows construct modular pipelines using interoperable
 
 ---
 
+## 💖 Support & Sponsorship
+
+Thank you for exploring this curated list! If you find this resource helpful for your ML pipelines, data annotation workflows, or research:
+
+- ⭐ **Star** this repository to show your support and help others discover it.
+- 🍴 **Fork** it to keep a copy or contribute new entries.
+- 📢 **Share** it with your fellow ML engineers, data scientists, and AI builders!
+- ☕ **Buy me a coffee**: If you'd like to support ongoing updates and maintenance of awesome lists, consider becoming a sponsor via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
 ## 🤝 How to Contribute
 
 Contributions are welcome! Please follow these simple guidelines:
@@ -102,6 +117,12 @@ Contributions are welcome! Please follow these simple guidelines:
 - This repository is a **community-curated list** for informational and educational purposes.
 - Datasets often contain sensitive or personal information. Maintain proper regulatory compliance (GDPR, HIPAA) when handling raw training data.
 - Financial estimations, valuations, and star counts are collected from public market data and snapshots updated as of 2026.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-AI-Dataset-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-AI-Dataset-Management&type=date&legend=top-left)
 
 ---
 
