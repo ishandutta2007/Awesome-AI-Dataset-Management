@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Glowing Text & Element Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Filters for Dynamic Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 52px;
+      fill: url(#titleGrad);
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+      letter-spacing: 1.5px;
+    }
+    .badge {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #38bdf8;
+    }
+    
+    /* CSS Animations for Dynamic Aspect */
+    @keyframes pulseOrb {
+      0% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.15); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 0.4; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+    @keyframes dashStream {
+      0% { stroke-dashoffset: 1000; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: 1000px 260px; }
+    .particle { animation: floatParticle 12s ease-in-out infinite; }
+    .stream-line {
+      stroke-dasharray: 20 10;
+      animation: dashStream 30s linear infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- DYNAMIC BACKGROUND ELEMENTS (Behind Text & Foreground) -->
+  <g id="background-dynamic-elements">
+    <!-- Glowing Orbs -->
+    <circle class="orb-1" cx="200" cy="100" r="180" fill="#3b82f6" opacity="0.25" filter="url(#softGlow)" />
+    <circle class="orb-2" cx="1000" cy="260" r="220" fill="#8b5cf6" opacity="0.2" filter="url(#softGlow)" />
+
+    <!-- Grid lines -->
+    <path d="M 0 90 L 1200 90 M 0 180 L 1200 180 M 0 270 L 1200 270" stroke="#334155" stroke-width="1" opacity="0.3" />
+    <path d="M 200 0 L 200 360 M 400 0 L 400 360 M 600 0 L 600 360 M 800 0 L 800 360 M 1000 0 L 1000 360" stroke="#334155" stroke-width="1" opacity="0.3" />
+
+    <!-- Neural Network Node Connections / Data Streams -->
+    <path class="stream-line" d="M 50 300 Q 300 200 600 280 T 1150 100" fill="none" stroke="url(#titleGrad)" stroke-width="2" opacity="0.4" />
+    <path class="stream-line" d="M 100 80 Q 400 150 800 60 T 1100 280" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.3" />
+
+    <!-- Floating Data Nodes / Geometric Particles -->
+    <g class="particle" style="transform-origin: 150px 220px;">
+      <polygon points="150,210 160,225 140,225" fill="#38bdf8" opacity="0.5" />
+    </g>
+    <g class="particle" style="transform-origin: 1050px 120px; animation-delay: -3s;">
+      <rect x="1040" y="110" width="16" height="16" rx="3" fill="#c084fc" opacity="0.6" />
+    </g>
+    <g class="particle" style="transform-origin: 900px 290px; animation-delay: -6s;">
+      <circle cx="900" cy="290" r="8" fill="#f43f5e" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- FOREGROUND CONTENT (Guaranteed Visibility & Crisp Alignment) -->
+  <g id="foreground-content">
+    <!-- Category Badge Container -->
+    <rect x="80" y="55" width="270" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" opacity="0.9" />
+    <text x="95" y="77" class="badge">🚀 DATA-CENTRIC AI ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="80" y="145" class="title" filter="url(#glow)">Awesome AI Dataset Management</text>
+
+    <!-- Subtitle -->
+    <text x="80" y="195" class="subtitle">Curated Tools for Data Labeling, Curation, Annotation &amp; Versioning</text>
+
+    <!-- Tag Pills / Tech Specs -->
+    <g transform="translate(80, 235)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="140" height="36" rx="8" fill="url(#accentGrad)" stroke="#38bdf8" stroke-width="1" />
+      <text x="70" y="23" font-family="sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">🏷️ Annotation</text>
+
+      <!-- Pill 2 -->
+      <rect x="155" y="0" width="130" height="36" rx="8" fill="url(#accentGrad)" stroke="#818cf8" stroke-width="1" />
+      <text x="220" y="23" font-family="sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">🔍 Curation</text>
+
+      <!-- Pill 3 -->
+      <rect x="300" y="0" width="140" height="36" rx="8" fill="url(#accentGrad)" stroke="#c084fc" stroke-width="1" />
+      <text x="370" y="23" font-family="sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">📦 Versioning</text>
+
+      <!-- Pill 4 -->
+      <rect x="455" y="0" width="160" height="36" rx="8" fill="url(#accentGrad)" stroke="#34d399" stroke-width="1" />
+      <text x="535" y="23" font-family="sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">⚡ Multimodal AI</text>
+    </g>
+
+    <!-- Footer Meta Stats Line -->
+    <text x="80" y="315" font-family="sans-serif" font-size="13" fill="#64748b">
+      Updated for 2026 • Open-Source &amp; Enterprise SaaS Directory
+    </text>
+  </g>
+</svg>
