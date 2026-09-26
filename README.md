@@ -59,9 +59,9 @@ Below is a curated comparison of leading commercial AI dataset management, annot
 
 ## 🔓 Open-Source GitHub Projects
 
-These open-source tools power self-hosted data labeling, dataset curation, and data versioning pipelines. Sorted by GitHub Star Count (descending):
+These open-source tools power self-hosted data labeling, dataset curation, and data versioning pipelines. Sorted by GitHub Stars_Count (descending):
 
-| Repository 📦 | GitHub Stars ⭐ | License 📜 | Category & Primary Focus 🎯 |
+| Repository 📦 | GitHub_Stars ⭐ | License 📜 | Category & Primary Focus 🎯 |
 | :--- | :--- | :--- | :--- |
 | **[Label Studio](https://github.com/HumanSignal/label-studio)** | [![Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers) | Apache-2.0 | Multimodal data labeling (Image, Audio, Text, Video, Time Series). |
 | **[LabelImg](https://github.com/HumanSignal/labelImg)** | [![Stars](https://img.shields.io/github/stars/HumanSignal/labelImg?style=social&color=white)](https://github.com/HumanSignal/labelImg/stargazers) | MIT | Graphical image annotation tool and label bounding boxes (Legacy/Archived). |
@@ -116,7 +116,7 @@ Contributions are welcome! Please follow these simple guidelines:
 
 - This repository is a **community-curated list** for informational and educational purposes.
 - Datasets often contain sensitive or personal information. Maintain proper regulatory compliance (GDPR, HIPAA) when handling raw training data.
-- Financial estimations, valuations, and star counts are collected from public market data and snapshots updated as of 2026.
+- Financial estimations, valuations, and Stars_Counts are collected from public market data and snapshots updated as of 2026.
 
 ---
 
